@@ -3,6 +3,7 @@ using System.Resources;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Windows;
+using System.Windows.Markup;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
@@ -40,6 +41,8 @@ using System.Windows;
                                       // app, or any theme specific resource dictionaries)
 )]
 
-[assembly: AssemblyVersion("0.1.*")]
+[assembly: AssemblyVersion("0.1.1.*")]
 [assembly: NeutralResourcesLanguage("")]
+
+[assembly: XmlnsDefinition("http://schemas.microsoft.com/winfx/2006/xaml/presentation", "Map.Controls")]
 

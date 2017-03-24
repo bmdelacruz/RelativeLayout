@@ -10,39 +10,31 @@ Here's a snippet of the XAML code from the test application.
 
 ```xml
 ...
-<controls:RelativeLayout>
+<RelativeLayout>
     <Grid x:Name="aqua" 
           Background="Aqua"
           Width="150" Height="150"
-          controls:RelativeLayout.CenterInParent="True"/>
+          RelativeLayout.CenterInParent="True"/>
 
     <Grid x:Name="bisque"
           Width="20"
           Background="Bisque"
-          controls:RelativeLayout.AlignParentBottom="True"
-          controls:RelativeLayout.AlignTop="aqua"
-          controls:RelativeLayout.ToRightOf="aqua"/>
+          RelativeLayout.AlignParentBottom="True"
+          RelativeLayout.AlignTop="aqua"
+          RelativeLayout.ToRightOf="aqua"/>
 
     <Grid x:Name="darkBlue"
           Height ="20"
           Background="DarkBlue"
-          controls:RelativeLayout.Above="aqua"
-          controls:RelativeLayout.AlignLeft="aqua"
-          controls:RelativeLayout.AlignParentRight="True"/>
+          RelativeLayout.Above="aqua"
+          RelativeLayout.AlignLeft="aqua"
+          RelativeLayout.AlignParentRight="True"/>
 ...
 ```
 
 ## How to include in project
-1. Download the DLL from [here](https://github.com/bmdelacruz/RelativeLayout/releases/download/0.1/Map.Controls.RelativeLayout.dll).
+1. Download the DLL from [here](https://github.com/bmdelacruz/RelativeLayout/releases/download/0.1.1/Map.Controls.RelativeLayout.dll).
 2. Add the downloaded DLL as a reference in your WPF Project.
-3. In the XAML where you'd like to use the RelativeLayout control, do not forget to add the namespace.
-```xml
-xmlns:controls="clr-namespace:Map.Controls;assembly=Map.Controls.RelativeLayout"
-```
-4. You can now reference the RelativeLayout control in your XAML like this.
-```xml
-<controls:RelativeLayout></controls:RelativeLayout>
-```
 
 ## Reference
 ### RelativeLayout's child properties

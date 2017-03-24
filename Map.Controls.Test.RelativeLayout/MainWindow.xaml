@@ -4,72 +4,71 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Map.Controls.Test.RelativeLayout"
-        xmlns:controls="clr-namespace:Map.Controls;assembly=Map.Controls.RelativeLayout"
         mc:Ignorable="d"
         Title="MainWindow" Height="480" Width="640">
     
-    <controls:RelativeLayout>
+    <RelativeLayout>
         <Grid x:Name="aqua" 
               Background="Aqua"
               Width="150" Height="150"
-              controls:RelativeLayout.CenterInParent="True"/>
+              RelativeLayout.CenterInParent="True"/>
 
         <Grid x:Name="bisque"
               Width="20"
               Background="Bisque"
-              controls:RelativeLayout.AlignParentBottom="True"
-              controls:RelativeLayout.AlignTop="aqua"
-              controls:RelativeLayout.ToRightOf="aqua"/>
+              RelativeLayout.AlignParentBottom="True"
+              RelativeLayout.AlignTop="aqua"
+              RelativeLayout.ToRightOf="aqua"/>
 
         <Grid x:Name="darkBlue"
               Height ="20"
               Background="DarkBlue"
-              controls:RelativeLayout.Above="aqua"
-              controls:RelativeLayout.AlignLeft="aqua"
-              controls:RelativeLayout.AlignParentRight="True"/>
+              RelativeLayout.Above="aqua"
+              RelativeLayout.AlignLeft="aqua"
+              RelativeLayout.AlignParentRight="True"/>
 
         <Grid x:Name="darkGoldenrod"
               Background="DarkGoldenrod"
-              controls:RelativeLayout.AlignParentBottom="True"
-              controls:RelativeLayout.AlignParentRight="True"
-              controls:RelativeLayout.Below="darkBlue"
-              controls:RelativeLayout.ToRightOf="bisque"/>
+              RelativeLayout.AlignParentBottom="True"
+              RelativeLayout.AlignParentRight="True"
+              RelativeLayout.Below="darkBlue"
+              RelativeLayout.ToRightOf="bisque"/>
 
         <Grid x:Name="blueViolet"
               Width="20"
               Background="BlueViolet"
-              controls:RelativeLayout.AlignParentTop="True"
-              controls:RelativeLayout.AlignBottom="aqua"
-              controls:RelativeLayout.ToLeftOf="aqua"/>
+              RelativeLayout.AlignParentTop="True"
+              RelativeLayout.AlignBottom="aqua"
+              RelativeLayout.ToLeftOf="aqua"/>
 
         <Grid x:Name="darkCyan"
               Background="DarkCyan"
-              controls:RelativeLayout.AlignParentTop="True"
-              controls:RelativeLayout.AlignParentRight="True"
-              controls:RelativeLayout.Above="darkBlue"
-              controls:RelativeLayout.ToRightOf="blueViolet"/>
+              RelativeLayout.AlignParentTop="True"
+              RelativeLayout.AlignParentRight="True"
+              RelativeLayout.Above="darkBlue"
+              RelativeLayout.ToRightOf="blueViolet"/>
 
         <Grid x:Name="red"
               Height="20"
               Background="Red" 
-              controls:RelativeLayout.Below="aqua"
-              controls:RelativeLayout.AlignRight="aqua"
-              controls:RelativeLayout.AlignParentLeft="True"/>
+              RelativeLayout.Below="aqua"
+              RelativeLayout.AlignRight="aqua"
+              RelativeLayout.AlignParentLeft="True"/>
 
         <Grid x:Name="darkSlateGray"
               Background="DarkSlateGray"
-              controls:RelativeLayout.AlignParentTop="True"
-              controls:RelativeLayout.AlignParentLeft="True"
-              controls:RelativeLayout.Above="red"
-              controls:RelativeLayout.ToLeftOf="blueViolet"/>
+              RelativeLayout.AlignParentTop="True"
+              RelativeLayout.AlignParentLeft="True"
+              RelativeLayout.Above="red"
+              RelativeLayout.ToLeftOf="blueViolet"/>
 
         <Grid x:Name="darkTurquoise"
               Background="DarkTurquoise"
-              controls:RelativeLayout.AlignParentBottom="True"
-              controls:RelativeLayout.AlignParentLeft="True"
-              controls:RelativeLayout.Below="red"
-              controls:RelativeLayout.ToLeftOf="bisque"/>
+              RelativeLayout.AlignParentBottom="True"
+              RelativeLayout.AlignParentLeft="True"
+              RelativeLayout.Below="red"
+              RelativeLayout.ToLeftOf="bisque"/>
         
-    </controls:RelativeLayout>
+    </RelativeLayout>
     
 </Window>
